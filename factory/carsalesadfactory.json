@@ -1,0 +1,9 @@
+{
+	"name": "carsalesadfactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "17daccf0-779b-48ab-abb7-2cf7fc241be6",
+		"tenantId": "328d6c0d-0f2f-4b76-9310-9762ba1c3e2d"
+	}
+}
