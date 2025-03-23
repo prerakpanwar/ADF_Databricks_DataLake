@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "carsalesadfactory"
+		},
+		"AzureSqlDatabaseLS_password": {
+			"value": ""
+		},
+		"lsb_datalake_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_server": {
+			"value": "servercarsalesdata.database.windows.net"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_database": {
+			"value": "carsalessqldb"
+		},
+		"AzureSqlDatabaseLS_properties_typeProperties_userName": {
+			"value": "adminprerak"
+		},
+		"githubLS_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"lsb_datalake_properties_typeProperties_url": {
+			"value": "https://carsalesdata.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
