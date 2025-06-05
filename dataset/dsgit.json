@@ -1,0 +1,30 @@
+{
+	"name": "dsgit",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsgithub",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"loadflag": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "prerakpanwar/ADF_Databricks_DataLake/refs/heads/main/RawData/@{dataset().loadflag}",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
