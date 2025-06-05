@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'lsSQLdb'"
 		},
+		"ls_datalake_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_datalake'"
+		},
 		"lsSQLdb_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "prerakserversql.database.windows.net"
@@ -22,6 +26,10 @@
 		"lsSQLdb_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "adminprerak"
+		},
+		"ls_datalake_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://preraksalesdatalake.dfs.core.windows.net/"
 		},
 		"lsgithub_properties_typeProperties_url": {
 			"type": "string",
@@ -57,6 +65,9 @@
 					"lsSQLdb_password": {
 						"value": "[parameters('lsSQLdb_password')]"
 					},
+					"ls_datalake_accountKey": {
+						"value": "[parameters('ls_datalake_accountKey')]"
+					},
 					"lsSQLdb_properties_typeProperties_server": {
 						"value": "[parameters('lsSQLdb_properties_typeProperties_server')]"
 					},
@@ -65,6 +76,9 @@
 					},
 					"lsSQLdb_properties_typeProperties_userName": {
 						"value": "[parameters('lsSQLdb_properties_typeProperties_userName')]"
+					},
+					"ls_datalake_properties_typeProperties_url": {
+						"value": "[parameters('ls_datalake_properties_typeProperties_url')]"
 					},
 					"lsgithub_properties_typeProperties_url": {
 						"value": "[parameters('lsgithub_properties_typeProperties_url')]"

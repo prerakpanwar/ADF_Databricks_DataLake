@@ -8,6 +8,9 @@
 		"lsSQLdb_password": {
 			"value": ""
 		},
+		"ls_datalake_accountKey": {
+			"value": ""
+		},
 		"lsSQLdb_properties_typeProperties_server": {
 			"value": "prerakserversql.database.windows.net"
 		},
@@ -16,6 +19,9 @@
 		},
 		"lsSQLdb_properties_typeProperties_userName": {
 			"value": "adminprerak"
+		},
+		"ls_datalake_properties_typeProperties_url": {
+			"value": "https://preraksalesdatalake.dfs.core.windows.net/"
 		},
 		"lsgithub_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com/"
