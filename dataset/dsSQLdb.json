@@ -5,6 +5,11 @@
 			"referenceName": "lsSQLdb",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"table_name": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
@@ -60,7 +65,10 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "source_carsales_data"
+			"table": {
+				"value": "@dataset().table_name",
+				"type": "Expression"
+			}
 		}
 	}
 }
